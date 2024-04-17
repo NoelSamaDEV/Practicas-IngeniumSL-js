@@ -8,85 +8,110 @@
 </head>
 <body>
     <header>
-        <div class="header-container">            
+        <div class="header-container">
             <h1>NOELSAMADEV</h1>
+            <nav>
+                <ul>
+                    <li><a href="#proyectos"> Proyectos</a></li>
+                    <li><a href="#sobre-mi"> Sobre Mí</a></li>
+                    <li><a href="#contacto"> Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <div>
-
-            <div class="slide">
-                <div class="slide-inner">
-                    <input class="slide-open" type="radio" id="slide-1" 
-                    name="slide" aria-hidden="true" hidden="" checked="checked">
-                    <div class="slide-item">
-                        <img src="/03-Portfolio/img/foto-portfolio-1.webp">
-                        <div class="info-container">
-                            <h1>SOBRE MI  </h1>
-                            <br>
-                            <h3>Soy un apasionado desarrollador web full stack con una sólida experiencia en la creación de aplicaciones web dinámicas y sitios interactivos. Mi enfoque integral me permite abordar tanto el lado del cliente como del servidor de un proyecto, lo que significa que puedo trabajar en todas las capas del desarrollo web, desde el diseño y la experiencia del usuario hasta la funcionalidad y la base de datos.<br><br>
-                                Mi enfoque versátil me permite colaborar de manera efectiva con diseñadores, desarrolladores y otros profesionales para crear soluciones web completas y eficientes. Estoy comprometido con la creación de aplicaciones web de alta calidad que no solo sean visualmente atractivas, sino también rápidas, seguras y fáciles de usar.<br><br>
-                                Estoy emocionado por la oportunidad de aplicar mis habilidades técnicas y mi pasión por la tecnología para contribuir al éxito de proyectos web innovadores. Estoy seguro de que mi experiencia y dedicación me convierten en un candidato ideal para cualquier desafío en el desarrollo web full stack.</h3>
-                            
-                        </div>
-                </div>
-                <input class="slide-open" type="radio" id="slide-2" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <img src="/03-Portfolio/img/foto-portfolio-3.jpg">
-                    <div class="info-container">
-                        <h1>DATOS PERSONALES</h1>
-                        <br>
-                        <h5 class="centrado">Nombre: Noel Fernández Álvarez.</h5>
-                        <br>
-                        <h5 class="centrado">Fecha de nacimiento:03/03/1997    | Nacionalidad:Española    | Genero:Masculino</h5> 
-                        <br>
-                        <h5 class="centrado">Correo Electronico:<a href="mailto:noelsamadegrao@gmail.com"> Noelsamadegrao@gmail.com</a>    | Teléfono:<a href="tel:+34673587250"> 673587250</a></h5>
-                        <br>
-                        <h5 class="centrado">Dirección:<a href="https://maps.app.goo.gl/z1XVhxwsZBHC7mG9A" target="_blank"> Sama de Grado, 33820, Asturias, España.</a></h5>
-                        <br>
-                        <h5 class="centrado">Permisos de conducción: Tipo B.</h5>    
-                        
-                        
-                    </div>
-                </div>
-                <input class="slide-open" type="radio" id="slide-3" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <img src="/03-Portfolio/img/foto-portfolio-3.jpg">
-                </div>
-                <label for="slide-3" class="slide-control prev control-1">‹</label>
-                <label for="slide-2" class="slide-control next control-1">›</label>
-                <label for="slide-1" class="slide-control prev control-2">‹</label>
-                <label for="slide-3" class="slide-control next control-2">›</label>
-                <label for="slide-2" class="slide-control prev control-3">‹</label>
-                <label for="slide-1" class="slide-control next control-3">›</label>
-                <ol class="slide-indicador">
-                    <li>
-                        <label for="slide-1" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-2" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-3" class="slide-circulo">•</label>
-                    </li>
-                </ol>
-            </div>
-            
-        </div>
-
-            
-
-        </div>
-        
     </header>
+    <body>
+        <div class="saludo">
+            <h1>👋 HOLA, SOY NOELSAMADEV </h1>
+            <br>
+            <h3>Soy un desarrollador web full stack de Asturias y mi pasion es la creación de aplicaciones web dinámicas y sitios interactivos. </h3>
+            <br>
+            <div class="botones">
+                <a href="mailto:noelsamadegrao@gmail.com">
+                    <button class="linkedin-button">
+                      <img src="/03-Portfolio/img/gmail.svg" alt="">
+                      <span>Gmail</span>
+                    </button>
+                  </a>
+                  <a href="https://www.linkedin.com/in/noel-fernández-álvarez-24a7452a7/" target="_blank">
+                    <button class="linkedin-button">
+                      <img src="/03-Portfolio/img/linkedin.svg" alt="">
+                      <span>LinkedIn</span>
+                    </button>
+                  </a>
+            </div>
+        </div>
+        <div class="centrado-proyectos" id="proyectos">
+            <h1 >PROYECTOS</h1>
+            <br>
+            <div class="galeria">
+                <div class="image-text-button">
+                  <img src="/02-GaleriaImagenes/img/1.webp" alt="Juego retro 1" class="gallery-item">
+                  <div class="text-button">
+                    <h3>Juego retro 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="linkedin-button">
+                      <img src="/03-Portfolio/img/github.svg" alt="Github Logo">
+                      <span>GitHub</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="image-text-button">
+                  <img src="/02-GaleriaImagenes/img/2.webp" alt="Juego retro 2" class="gallery-item">
+                  <div class="text-button">
+                    <h3>Juego retro 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="linkedin-button">
+                        <img src="/03-Portfolio/img/github.svg" alt="Github Logo">
+                        <span>GitHub</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="image-text-button">
+                  <img src="/02-GaleriaImagenes/img/3.webp" alt="Juego retro 3" class="gallery-item">
+                  <div class="text-button">
+                    <h3>Juego retro 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="linkedin-button">
+                        <img src="/03-Portfolio/img/github.svg" alt="Github Logo">
+                        <span>GitHub</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="image-text-button">
+                  <img src="/02-GaleriaImagenes/img/4.webp" alt="Juego retro 4" class="gallery-item">
+                  <div class="text-button">
+                    <h3>Juego retro 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="linkedin-button">
+                        <img src="/03-Portfolio/img/github.svg" alt="Github Logo">
+                        <span>GitHub</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="centrado" id="sobre-mi">
+            <h1 >SOBRE MI  </h1>
+            <br>
+            <h3>Soy un apasionado desarrollador web full stack con una sólida experiencia en la creación de aplicaciones web dinámicas y sitios interactivos. Mi enfoque integral me permite abordar tanto el lado del cliente como del servidor de un proyecto, lo que significa que puedo trabajar en todas las capas del desarrollo web, desde el diseño y la experiencia del usuario hasta la funcionalidad y la base de datos.<br><br>
+                 Mi enfoque versátil me permite colaborar de manera efectiva con diseñadores, desarrolladores y otros profesionales para crear soluciones web completas y eficientes. Estoy comprometido con la creación de aplicaciones web de alta calidad que no solo sean visualmente atractivas, sino también rápidas, seguras y fáciles de usar.<br><br>
+                 Estoy emocionado por la oportunidad de aplicar mis habilidades técnicas y mi pasión por la tecnología para contribuir al éxito de proyectos web innovadores. Estoy seguro de que mi experiencia y dedicación me convierten en un candidato ideal para cualquier desafío en el desarrollo web full stack.</h3>
+        </div>
+        <div class="centrado">
+            <h1 id="contacto">CONTACTO</h1>
+            <br>
+            <h5>Nombre: Noel Fernández Álvarez.</h5>
+            <br>
+            <h5>Correo Electronico:<a href="mailto:noelsamadegrao@gmail.com"> Noelsamadegrao@gmail.com</a></h5>
+            <h5>Teléfono:<a href="tel:+34673587250"> 673587250</a></h5>
+            <br>
+        </div>
+    </body>
 
     <footer>
         <hr>
         <div class="footer">
             <h5 class="copy">&copy; Noel Fernandez Alvarez 2024</h5>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img class="logo" src="img/whatsapp.svg" alt="Whatsapp" style="width:30px;height:30px;margin-left:15px;">
-            </a>
             <a href="https://www.facebook.com/noel.samafernandez/" target="_blank"><img class="logo" src="img/facebook.svg" alt="Facebook" style="width:30px;height: 30px;margin-left:15px;">
             </a>
             <a href="https://twitter.com/NoelSama97" target="_blank"><img class="logo" src="img/twitter.svg" alt="Twitter" style="width:30px;height:30px;margin-left:15px;">
