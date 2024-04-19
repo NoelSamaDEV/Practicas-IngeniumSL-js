@@ -44,12 +44,31 @@ nav {
 
 nav img.logo {
     height: 30px; /* Ajusta la altura según tus necesidades */
+    padding: 5px;
+}
+nav img.logo:hover {
+    background-color:  #46454546;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 nav .toggle {
     fill: #D7DADC;
     height: 30px; /* Ajusta la altura según tus necesidades */
     cursor: pointer;
+    padding: 5px 10px 5px 10px;
+}
+
+nav .toggle:hover {
+    background-color:  #46454546;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 
