@@ -1,0 +1,238 @@
+*{
+    color: #f3f3f3 ;
+}
+
+
+html{
+    height: 100%;
+    margin: 0;
+    font-family: Roboto;
+    background-color: #1A1A1B; /* Color de fondo similar al de la imagen */
+    color: #D7DADC;
+    text-decoration: none;
+
+    
+}
+
+a{  
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+svg{
+    width: 20px;
+    fill: #868686;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(22, 25, 29 , 65%);
+    backdrop-filter: blur(2px);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+}
+
+
+nav img.logo {
+    height: 30px; /* Ajusta la altura según tus necesidades */
+}
+
+nav .toggle {
+    fill: #D7DADC;
+    height: 30px; /* Ajusta la altura según tus necesidades */
+    cursor: pointer;
+}
+
+
+
+header{
+    margin: auto;
+    width: 655px;
+    max-width: 100%;
+}
+
+.banner-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+.banner{
+    width: 100%;  /* Ancho del div */
+    height: 220px;
+    max-width: 655px;
+    border: 1px solid #000; /* Opcional: un borde para visualizar mejor el div */
+    object-fit: cover;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    
+}
+
+.avatar-container{
+    display: flex;
+    position: relative;
+    margin-top: -80px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:20px ;
+    padding-right:20px ;
+}
+
+.avatar-container img.avatar{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 4px solid #f3f3f3;
+}
+
+.follow-btn {
+    height: 20px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #329a34;
+    color: #f3f3f3;
+    border-radius: 40px;
+    margin-top: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+h1 {
+    color: #FFFFFF;
+    margin: 0.5rem 0;
+    font-size: 35px;
+}
+
+.verificado{
+    fill: #329a34;
+}
+
+.about-txt {
+    text-align: start;
+    margin-bottom: 0.5rem;
+}
+
+/* SVG y otros elementos dentro de .about-container */
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.about-container svg {
+    width: 20px;
+    fill: #868686;
+}
+
+.about-container div {
+    
+    display: flex;
+    align-items: center;
+    margin: 0.25rem 0;
+    margin-right: 30px;
+    
+}
+
+.about-container span {
+    margin-left: 0.5rem;
+    color: #868686;
+    
+}
+
+.about-container span a {
+    direction: none;
+    text-decoration: none;
+    color: #329a34;
+    font-weight: bold;
+}
+
+.about-container span a:hover{
+    border-bottom: 4px solid #329a34;
+}
+
+main{
+    margin: auto;
+    width: 655px;
+    max-width: 100%;
+}
+
+
+.menu-container{
+    display: flex;
+    justify-content: flex-start;
+}
+.menu-container ul{
+display: flex;
+flex-direction: row;
+padding-inline-start: 1rem;
+
+}
+
+.menu-container ul li{ 
+padding: 20px 10px 20px 10px;
+height: 20px;
+width: 135px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-weight: bold;
+
+    a{
+        color: #868686;
+    }
+}
+
+.menu-container ul li:hover{ 
+    background-color:  #46454546;
+
+}
+
+#inbox{
+    border-bottom:3px solid #329a34;
+
+    a{
+        color: white;
+    }
+}
+.proyectos-container{
+    margin-top: 20px;
+}
+.pinned{
+display: flex;
+flex-direction: row;
+
+margin-left: 25px;
+
+svg{
+    width: 18px;
+    margin-right: 10px;
+}
+}
+.pinned p{
+    font-size: 12px;
+    font-family: sans-serif ;
+    color: #868686;
+}
