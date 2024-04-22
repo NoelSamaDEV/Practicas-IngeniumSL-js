@@ -14,6 +14,20 @@ html{
     
 }
 
+b{
+    color: #af09fc;
+}
+
+p{
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 a{  
     text-decoration: none;
 }
@@ -47,7 +61,7 @@ nav img.logo {
     padding: 5px;
 }
 nav img.logo:hover {
-    background-color:  #46454546;
+    background-color:  #555454;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -63,7 +77,7 @@ nav .toggle {
 }
 
 nav .toggle:hover {
-    background-color:  #46454546;
+    background-color:  #555454;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -79,13 +93,36 @@ header{
     max-width: 100%;
 }
 
+.container {
+    width: 655px;
+    height: 220px;
+    --s: 200px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+  }
+  
+
 .banner-container {
     width: 100%;
     height: auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    
 }
 .banner{
     width: 100%;  /* Ancho del div */
@@ -126,7 +163,7 @@ header{
     height: 20px;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    background-color: #329a34;
+    background-color: #af09fc;
     color: #f3f3f3;
     border-radius: 40px;
     margin-top: 60px;
@@ -145,12 +182,16 @@ h1 {
 }
 
 .verificado{
-    fill: #329a34;
+    fill: #af09fc;
 }
 
 .about-txt {
     text-align: start;
     margin-bottom: 0.5rem;
+
+    p{
+        margin-bottom: 15px;
+    }
 }
 
 /* SVG y otros elementos dentro de .about-container */
@@ -181,15 +222,15 @@ h1 {
     
 }
 
-.about-container span a {
+.links a{ 
     direction: none;
     text-decoration: none;
-    color: #329a34;
+    color: #af09fc;
     font-weight: bold;
 }
 
-.about-container span a:hover{
-    border-bottom: 4px solid #329a34;
+.links a:hover{
+    border-bottom: 4px solid #af09fc;
 }
 
 main{
@@ -230,7 +271,7 @@ font-weight: bold;
 }
 
 #inbox{
-    border-bottom:3px solid #329a34;
+    border-bottom:3px solid #af09fc;
 
     a{
         color: white;
@@ -239,19 +280,284 @@ font-weight: bold;
 .proyectos-container{
     margin-top: 20px;
 }
+
+.py:hover{
+    background-color: #46454546;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
 .pinned{
 display: flex;
 flex-direction: row;
-
+margin-bottom: 20px;
 margin-left: 25px;
 
 svg{
     width: 18px;
     margin-right: 10px;
 }
+
 }
 .pinned p{
     font-size: 12px;
     font-family: sans-serif ;
     color: #868686;
 }
+
+.img-autor-py{
+width: 50px;
+height: auto;    
+}
+
+.img-autor-py img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.py{
+    padding: 20px;
+}
+
+.proyecto{
+    display: flex;
+    
+    
+}
+.contenido-py{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.autor-container{
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.autor-container .autor{
+    margin-top: -1px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 10px;
+
+    a{
+        font-weight: bold;
+        font-size: 18px;
+        margin-right: 10px;
+        
+        
+    }
+
+    span{
+        margin-right: 2px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #868686;
+    }
+
+    .span2{
+        width: 100%;
+        font-size: 12px;
+        color: #868686;
+    }
+    
+}
+
+.tag-container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    
+
+    .tag{
+        height: auto;
+        min-width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #ffffff46;
+        padding: 6px 6px 6px 6px;
+        justify-content: center;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+
+        p{
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+
+    .tag img{
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .html{
+        width: 120px;
+    }
+
+    .css{
+        width: 110px;
+    }
+
+    .js{
+        width: 150px;
+    }
+}
+
+.py-name{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.py-txt{
+    margin-bottom: 25px;
+    max-width: 530px;
+}
+
+.img-py img{
+    width: 530px;
+    height: 350px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    margin-bottom: 5px;
+}
+
+.logos-inferiores-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    
+
+    a{  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        svg{
+            fill: none;
+        }
+    }
+    a:hover{
+
+        svg{
+            stroke: #af09fc;
+        }
+    }
+    
+   
+
+}
+
+ol{
+    list-style: none;
+    margin-top: 25px;
+    position: relative;
+}
+
+.exp-content{
+    padding-bottom: 15px;
+    display: grid;
+    margin-left: 3rem ;
+    margin-right: 15px;
+    position: relative;    
+}
+
+.exp-content::before{
+    content: "";
+    position: absolute;
+    top: 0;    
+    background-color: #8686864f;
+    border-left-width: 2px;
+    height: 100%;
+    width: 2px;
+    left: -35px;
+} 
+
+.empresa-container{
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.empresa{
+    top:0;
+    position: sticky;
+
+    span{
+        color: #af09fc;
+        font-size: 3.2rem;
+        line-height: 1;
+        border-radius: 9999px;
+        position: absolute;
+        left: -42px;
+        -webkit-border-radius: 9999px;
+        -moz-border-radius: 9999px;
+        -ms-border-radius: 9999px;
+        -o-border-radius: 9999px;
+    }
+
+    h2{ 
+        color: #af09fc;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    h3{
+        margin: 0%;
+        margin-bottom: 10px;
+    }
+
+    time{
+        color: #D7DADC;
+        font-size: 14px;
+        
+    }
+}
+
+.exp-txt p{
+    padding-bottom: 1rem;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    position: relative;
+}
+
+
+@media(max-width:650px){
+
+    
+}    
+
+
+
+
