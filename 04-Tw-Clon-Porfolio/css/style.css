@@ -584,6 +584,114 @@ ol{
    
 }
 
+/* CSS PARTE CONTACTO */
+/* FORMULARIO DE CONTACTO */
+
+.contact-form{
+    display: flex;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.contact-form:hover{
+    background-color: #46454546
+}
+
+details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e4f51;
+}
+
+
+
+/* Estilo para el elemento summary */
+ summary {
+    padding-left:10px;
+    padding-right: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    svg{
+        width: 28px;
+        fill: #af09fc;
+    }
+}
+
+.form-content form{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    label{
+        margin-bottom: 10px;
+    }
+
+    input{
+        width: 98%;
+        height: 30px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border: none;
+}
+    textarea{
+        width: 98%;
+        height: 6rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .env-form{
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+
+        input{
+            height: 40px;
+            width: 50%;
+            border-radius: 50px;
+            background-color: #af09fc;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+}
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* CSS FOOTER */
 footer{
     display: flex;

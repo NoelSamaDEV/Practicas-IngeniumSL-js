@@ -36,3 +36,6 @@ function setupInbox() {
         });
     });
 }
+
+document.addEventListener("DOMContentLoaded", setupInbox);
+
