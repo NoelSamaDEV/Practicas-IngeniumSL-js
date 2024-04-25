@@ -1,0 +1,84 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    background-color: #1A1A1B;
+    color: #D7DADC;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    
+}
+
+/* CSS NAV */
+
+nav{
+    background-color: #FFE5CC;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    
+
+    img{
+        width: 80px;
+        height: 80px;
+
+        
+    }
+    
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+
+
+        li{
+            margin-right: 40px;
+            list-style-type: none;
+
+
+                a{
+                text-decoration: none;
+                padding: 20px;
+                color: #420001;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                }
+                a:hover{
+                    background-color:#FFB033;
+                    text-decoration: underline;
+                }
+            }
+     }
+}
+
+/* CSS BANNER CARTA */
+
+.banner-carta{
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS PRODUCTOS */
+
+.productos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.galeria{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+    h3,p{
+        margin-left:20px ;
+    }
+}
