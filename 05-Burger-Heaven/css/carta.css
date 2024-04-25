@@ -67,18 +67,124 @@ nav{
 
 /* CSS PRODUCTOS */
 
-.productos-container{
+.productos-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  
+  .galeria-container {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-.galeria{
+    
+  }
+  
+  div.galeria {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .burger-img-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .burger-img-container img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .burger-img-container:hover img {
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+  }
+  
+  .burger-txt-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.404);
+    color: #420001;
+    opacity: 0;
+  }
+  
+  .burger-img-container:hover .burger-txt-container {
+    opacity: 1;
+  }
+  
+  .burger-txt {
+    text-align: center;
+  }
+
+  .precio{
+    padding: 10px;
+   background-color: rgb(255, 0, 0);
+  }
+
+  /* CSS FOOTER */
+
+footer{
     margin-top: 30px;
-    
-    h3,p{
-        margin-left:20px ;
+    background-color: #FFE5CC;
+    color: #420001;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    div{
+        margin-right: 100px;
+        a{
+            color: #D26806;
+        }
     }
+    
+}
+.footer-content{
+    display: flex;
+    margin-left: 50px;
+     
+    div h2{
+        display: flex;
+        justify-content: center;
+    }
+}
+footer a {
+    text-decoration: none;
+
+    svg{
+        padding: 10px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+
+        
+}
+}
+footer a svg:hover{
+    
+        background-color: #f1cfae;
+        stroke: #D26806;
+        
+    
 }

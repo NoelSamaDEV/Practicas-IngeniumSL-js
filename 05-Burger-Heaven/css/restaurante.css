@@ -57,76 +57,50 @@ nav{
      }
 }
 
-/* CSS BANNER */
-
-.slide {
-    position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-}
-.slide-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: calc( 100px + 3em);
-    height: 90vh;
-    width: 100%;
-
-}
-.slide-open:checked + .slide-item {
-    position: static;
-    opacity: 100;
-}
-.slide-item {
-    position: absolute;
-    
-    opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
-    
-}
-.slide-item img {
-    display: block;
-    height: 850px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center
+.productos-container{
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
+.productos-container:hover{
+    background-color: #420001;
+}
+.banner{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.slide-control {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
+    h2{
+        font-size: xx-large;
+    }
 }
-.slide-control.prev {
-    left: 2%;
+.local{
+    display: flex;
+    justify-content: space-around;
 }
-.slide-control.next {
-    right: 2%;
-}
-.slide-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
-}
-#slide-1:checked ~ .control-1,
-#slide-2:checked ~ .control-2,
-#slide-3:checked ~ .control-3 {
-    display: block;
-}
+
+
+
+
+
+
+
+
+
 
 
 /* CSS FOOTER */
