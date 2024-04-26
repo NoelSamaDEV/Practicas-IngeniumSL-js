@@ -57,69 +57,65 @@ nav{
      }
 }
 
-.productos-container{
+/* CSS BANNER */
+
+.banner-filo{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-bottom: 20px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+}
+.banner{
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .productos-container:hover{
-    background-color: #420001;
-} */
-.banner{
-    font-size: xx-large;
+/* CSS FILOSOFIA CONTENT */
+
+.filo-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 130px;
+    margin-top: 50px;
 }
-.titulo-container{
+.filo-img{
+    margin-left: 150px;
+}
+.filo-txt{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    border-radius:10px ;
-    -webkit-border-radius:10px ;
-    -moz-border-radius:10px ;
-    -ms-border-radius:10px ;
-    -o-border-radius:10px ;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 30%;
 
-    h2{
-        font-size: xx-large;
-    }
+        img{
+            width: 140px;
+            border-radius: 9990px;
+            -webkit-border-radius: 9990px;
+            -moz-border-radius: 9990px;
+            -ms-border-radius: 9990px;
+            -o-border-radius: 9990px;
 }
-/* .titulo-container:hover{
-    background-color: #FFE5CC;
-    color: #420001;
-} */
-.local{
-    display: flex;
-    justify-content: space-around;
 }
-.local-img-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 30px;
-    margin-left: 30px;
-    
-    img{
-        width: 300px;
-        height: 300px;
-    }
-    iframe{
-        width: 500px;
-        height: 500px;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
